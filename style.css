@@ -1,0 +1,55 @@
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f9fafb;
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+}
+
+.container { width: 100%; max-width: 600px; }
+
+header { margin-bottom: 30px; }
+
+.filter-section {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+select {
+    padding: 10px;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    font-size: 16px;
+    width: 250px;
+}
+
+/* --- Grid Layout --- */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 20px;
+}
+
+.product-card {
+    background: white;
+    padding: 24px;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    transition: transform 0.2s ease;
+}
+
+.product-card h3 { margin: 0 0 10px 0; font-size: 20px; }
+.price { font-weight: bold; color: #111827; display: block; margin-bottom: 15px; }
+
+/* Category Tags */
+.tag {
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-size: 14px;
+    display: inline-block;
+}
+
+.electronics { background-color: #3b82f6; color: white; }
+.clothing { background-color: #bfdbfe; color: #1e40af; }
+/* .clothing { background-color: #3b82f6; color: white; } */
